@@ -28,11 +28,11 @@ def return_10_strings():
     return result
 
 
-def combine_strings_and_integers(strings: list, integers: list) -> list:
-    result = []
-    for index in range(SIZE):
-        result.append((strings[index], integers[index]))
-    return result
+# def combine_strings_and_integers(strings: list, integers: list) -> list:
+#     result = []
+#     for index in range(SIZE):
+#         result.append((strings[index], integers[index]))
+#     return result
 
 
 myDAG = DAG('myFirstBag', description='Airflow example DAG', start_date=datetime(2021, 9, 30),
@@ -40,6 +40,7 @@ myDAG = DAG('myFirstBag', description='Airflow example DAG', start_date=datetime
 # print(combine_strings_and_integers(return_10_strings(), return_10_integers()))
 int_task = PythonOperator(task_id='generate_integers', python_callable=return_10_integers, dag=myDAG)
 string_task = PythonOperator(task_id='generate_strings', python_callable=return_10_strings, dag=myDAG)
-combine_task = PythonOperator(task_id='combine_everything', python_callable=combine_strings_and_integers, dag=myDAG)
+# combine_task = PythonOperator(task_id='combine_everything', python_callable=combine_strings_and_integers, dag=myDAG)
 
-[int_task, string_task] >> combine_task
+# [int_task, string_task] >> combine_task
+int_task >> string_task
