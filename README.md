@@ -4,5 +4,8 @@ https://medium.com/big-data-processing/apache-airflow-crash-overview-acfdd63ada6
 
 REST API Crash Course | Full Python API Tutorial  https://morioh.com/p/8368a6a4802a [DONE]
 
-SQLAlchemy:
+**SQLAlchemy**:
 https://docs.sqlalchemy.org/en/14/core/tutorial.html
+
+**Elasticsearch**:
+https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started.html
