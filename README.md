@@ -9,3 +9,7 @@ https://docs.sqlalchemy.org/en/14/core/tutorial.html
 
 **Elasticsearch**:
 https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started.html
+
+
+**Hadoop**
+https://hadoop.apache.org/docs/stable/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html
